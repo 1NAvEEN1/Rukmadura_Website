@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   //   element: <Registration />,
   // },
   {
-    path: "/",
+    path: "/Rukmadura_Website",
     element: <Login />,
   },
 ]);
