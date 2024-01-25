@@ -16,11 +16,27 @@ const router = createBrowserRouter([
   //   element: <Registration />,
   // },
   {
-    path: "/Rukmadura_Website/",
+    path: "/",
     element: <Layout />,
     children: [
       {
-        path: "/Rukmadura_Website/",
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/home",
+        element: <Home />,
+      },
+      {
+        path: "/services",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <Home />,
+      },
+      {
+        path: "/contacts",
         element: <Home />,
       },
     ],
