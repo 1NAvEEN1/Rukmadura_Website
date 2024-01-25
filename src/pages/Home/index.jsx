@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-import BackGroundImage from "../../assests/Bg.svg";
+import BackGroundImage from "../../assets/Bg.svg";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       }}
     >
       <Box mt={7}>hom</Box>
-      <Box height={3000}></Box>
+      <Box height={1000}></Box>
     </Box>
   );
 };

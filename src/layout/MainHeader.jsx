@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { IconButton } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
-import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -15,7 +14,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import { useNavigate } from "react-router-dom";
 import { Grid, useScrollTrigger, Slide } from "@mui/material";
-import LogoBlack from "../assests/LogoBlack.png";
+import LogoBlack from "../assets/LogoBlack.png";
 
 const pages = [
   { name: "HOME", path: "home" },
