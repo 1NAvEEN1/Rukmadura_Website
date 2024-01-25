@@ -75,6 +75,8 @@ function MainHeader(props) {
             background: "transparent",
             // position: "sticky",
             // top: 0,
+            pt:2,
+            pr:2
           }}
         >
           <Toolbar disableGutters>

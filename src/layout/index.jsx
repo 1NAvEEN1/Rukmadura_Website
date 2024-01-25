@@ -5,7 +5,7 @@ import Footer from "./footer";
 
 const Layout = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#e2f0ea" }}>
       <MainHeader />
       <Outlet />
       <Footer />

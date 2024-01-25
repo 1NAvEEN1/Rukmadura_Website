@@ -1,6 +1,12 @@
 import React from "react";
 import { Box, Typography, Grid, Button } from "@mui/material";
+import ServiceItemCard from "./ServiceItemCard";
 import BackGroundImage from "../../assets/Bg.svg";
+import KidsPlay from "../../assets/kidsPlay.png";
+import TreeHouse from "../../assets/treeHouse.png";
+import Chalets from "../../assets/chalets.png";
+import TinyHomes from "../../assets/tinyHomes.png";
+import WhyChooseUsCard from "./WhyChooseUsCard";
 
 const Home = () => {
   return (
@@ -26,7 +32,7 @@ const Home = () => {
           <Typography
             fontSize={{ xs: 28, sm: 70 }}
             fontWeight={700}
-            mb={{ xs: -1.5, sm: -1 }}
+            mb={{ xs: -1, sm: -1 }}
           >
             WELCOME
           </Typography>
@@ -56,7 +62,23 @@ const Home = () => {
             </Button>
           </Box>
         </Grid>
+        <Grid item xs={12} display={"flex"} justifyContent={"center"} mt={7}>
+          <Typography variant="h3">Our Services</Typography>
+        </Grid>
       </Grid>
+
+      <Grid container spacing={3} pl={5} pr={5} mt={5}>
+        <ServiceItemCard imageSrc={KidsPlay} title="Kids Play Area" />
+        <ServiceItemCard imageSrc={TreeHouse} title="Tree Houses" />
+        <ServiceItemCard imageSrc={Chalets} title="Chalets" />
+        <ServiceItemCard imageSrc={TinyHomes} title="Tiny Homes" />
+      </Grid>
+
+      <Typography variant="h3" textAlign={"center"} mt={7}>
+        Why Choose Us?
+      </Typography>
+      <WhyChooseUsCard />
+
       <Box height={1000}></Box>
     </Box>
   );
