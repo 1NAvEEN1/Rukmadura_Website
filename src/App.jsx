@@ -3,6 +3,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import store from "./app/store";
 import ThemeProvider from "./theme";
 import Login from "./pages/Login/Login";
+// import Layout from "./layout";
+import Loadable from "./components/Loadable/Loadable";
+import { lazy } from "react";
+
+const Layout = Loadable(lazy(() => import("./layout")));
+const Home = Loadable(lazy(() => import("./pages/Home")));
 
 const router = createBrowserRouter([
   // {
@@ -10,8 +16,14 @@ const router = createBrowserRouter([
   //   element: <Registration />,
   // },
   {
-    path: "/Rukmadura_Website",
-    element: <Login />,
+    path: "/Rukmadura_Website/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/Rukmadura_Website/",
+        element: <Home />,
+      },
+    ],
   },
 ]);
 
