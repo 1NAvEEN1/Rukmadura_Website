@@ -7,6 +7,7 @@ import TreeHouse from "../../assets/treeHouse.png";
 import Chalets from "../../assets/chalets.png";
 import TinyHomes from "../../assets/tinyHomes.png";
 import WhyChooseUsCard from "./WhyChooseUsCard";
+import OurProcess from "./OurProcess";
 
 const Home = () => {
   return (
@@ -67,19 +68,22 @@ const Home = () => {
         </Grid>
       </Grid>
 
-      <Grid container spacing={3} pl={5} pr={5} mt={5}>
+      <Grid container spacing={3} pl={5} pr={5} mt={3}>
         <ServiceItemCard imageSrc={KidsPlay} title="Kids Play Area" />
         <ServiceItemCard imageSrc={TreeHouse} title="Tree Houses" />
         <ServiceItemCard imageSrc={Chalets} title="Chalets" />
         <ServiceItemCard imageSrc={TinyHomes} title="Tiny Homes" />
       </Grid>
 
-      <Typography variant="h3" textAlign={"center"} mt={7}>
+      <Typography variant="h3" textAlign={"center"} mt={10}>
         Why Choose Us?
       </Typography>
       <WhyChooseUsCard />
 
-      <Box height={1000}></Box>
+      <Typography variant="h3" textAlign={"center"} mt={10}>
+        Our process
+      </Typography>
+      <OurProcess />
     </Box>
   );
 };

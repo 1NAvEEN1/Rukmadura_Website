@@ -75,8 +75,8 @@ function MainHeader(props) {
             background: "transparent",
             // position: "sticky",
             // top: 0,
-            pt:2,
-            pr:2
+            pt: 2,
+            pr: 2,
           }}
         >
           <Toolbar disableGutters>
@@ -174,7 +174,7 @@ function MainHeader(props) {
                         textDecoration: "none",
                         textTransform: "none",
                         ":hover": {
-                          color: urlLocation == page.path ? "white" : "#F2B51C",
+                          color: urlLocation == page.path ? "white" : "#00AC8C",
                         },
                       }}
                     >

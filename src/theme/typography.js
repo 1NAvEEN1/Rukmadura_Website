@@ -65,7 +65,7 @@ const typography = {
   },
   body2: {
     lineHeight: 22 / 14,
-    fontSize: pxToRem(11),
+    fontSize: pxToRem(13),
     ...responsiveFontSizes({ sm: 16 }),
   },
   smallText: {
