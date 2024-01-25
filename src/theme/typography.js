@@ -6,16 +6,7 @@ import { pxToRem, responsiveFontSizes } from "../utils/getFontValue";
 // const FONT_SECONDARY = 'CircularStd, sans-serif'; // Local Font
 
 const typography = {
-  fontFamily: [
-    '"Poppins"',
-    "Roboto",
-    '"Helvetica Neue"',
-    "Arial",
-    "sans-serif",
-    '"Apple Color Emoji"',
-    '"Segoe UI Emoji"',
-    '"Segoe UI Symbol"',
-  ].join(","),
+  fontFamily: ["Work Sans"].join(","),
   fontSize: 12,
   fontWeightRegular: 400,
   fontWeightMedium: 600,
@@ -73,7 +64,8 @@ const typography = {
   },
   body2: {
     lineHeight: 22 / 14,
-    fontSize: pxToRem(14),
+    fontSize: pxToRem(11),
+    ...responsiveFontSizes({ sm: 16 }),
   },
   smallText: {
     lineHeight: 22 / 14,
