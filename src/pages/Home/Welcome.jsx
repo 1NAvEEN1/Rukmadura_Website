@@ -1,8 +1,10 @@
 import React from "react";
 import { Typography, Grid, Box, Button } from "@mui/material";
 import Image from "../../assets/WelcomeImage.png";
+import { useNavigate } from "react-router-dom";
 
 const Welcome = () => {
+  const navigate = useNavigate();
   return (
     <Grid
       container
@@ -60,8 +62,11 @@ const Welcome = () => {
             <Button
               variant="contained"
               sx={{ bgcolor: "white", color: "#00AC8C" }}
+              onClick={() => navigate("/contacts")}
             >
-              <Typography fontWeight={700}>Contact Us</Typography>
+              <Typography fontWeight={700} con>
+                Contact Us
+              </Typography>
             </Button>
           </Box>
         </Box>

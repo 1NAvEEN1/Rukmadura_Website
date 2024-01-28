@@ -64,7 +64,7 @@ function MainHeader(props) {
   const handleNavigation = (path) => {
     console.log(path);
     navigate(path);
-    toggleDrawer();
+    setDrawerOpen(false)
   };
 
   // State and handlers for the Menu component
