@@ -29,7 +29,24 @@ const router = createBrowserRouter([
       },
       {
         path: "services",
-        element: <Home />,
+        children: [
+          {
+            path: "kids_play_area",
+            element: <Home />,
+          },
+          {
+            path: "tree_houses",
+            element: <Home />,
+          },
+          {
+            path: "chalets",
+            element: <Home />,
+          },
+          {
+            path: "tiny_houses",
+            element: <Home />,
+          },
+        ],
       },
       {
         path: "about",

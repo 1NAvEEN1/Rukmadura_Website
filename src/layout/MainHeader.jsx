@@ -1,24 +1,33 @@
 import React, { useEffect, useState } from "react";
-import { IconButton } from "@mui/material";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import { Link, useLocation } from "react-router-dom";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
-import { useNavigate } from "react-router-dom";
-import { Grid, useScrollTrigger, Slide } from "@mui/material";
+import {
+  IconButton,
+  Menu,
+  MenuItem,
+  Drawer,
+  Grid,
+  useScrollTrigger,
+  Slide,
+  AppBar,
+  Toolbar,
+  Typography,
+  Box,
+} from "@mui/material";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import LogoBlack from "../assets/LogoBlack.png";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 const pages = [
   { name: "HOME", path: "home" },
-  { name: "OUR SERVICES", path: "services" },
+  {
+    name: "OUR SERVICES",
+    path: "services",
+    subMenus: [
+      { name: "Kids Play Area", path: "services/kids_play_area" },
+      { name: "Tree Houses", path: "services/tree_houses" },
+      { name: "Chalets", path: "services/chalets" },
+      { name: "Tiny Houses", path: "services/tiny_houses" },
+    ],
+  },
   { name: "ABOUT US", path: "about" },
   { name: "CONTACT US", path: "contacts" },
 ];
@@ -38,12 +47,13 @@ function HideOnScroll(props) {
 
 function MainHeader(props) {
   const location = useLocation();
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
   const navigate = useNavigate();
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
   const [urlLocation, setUrlLocation] = useState("");
+  const [urlLocation2, setUrlLocation2] = useState("");
 
   const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -52,15 +62,34 @@ function MainHeader(props) {
   };
 
   const handleNavigation = (path) => {
+    console.log(path);
     navigate(path);
+    toggleDrawer();
+  };
+
+  // State and handlers for the Menu component
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event, pageName) => {
+    if (pageName == "OUR SERVICES") {
+      setAnchorEl(event.currentTarget);
+    }
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
   };
 
   useEffect(() => {
     // Use location.pathname to get the current URL path
     const currentUrl = location.pathname;
-    const firstPath = currentUrl.split("/")[1];
+    const pathSegments = currentUrl.split("/");
+    const firstPath = pathSegments[1];
+    const secondPath = pathSegments[2]; // Access the second path segment
     setUrlLocation(firstPath);
-    if (firstPath == "") {
+    setUrlLocation2(secondPath);
+    // Assuming you want to navigate to "home" when the firstPath is empty or undefined
+    console.log(pathSegments);
+    if (!firstPath) {
       navigate("home");
     }
   }, [location.pathname]);
@@ -148,40 +177,101 @@ function MainHeader(props) {
                 alignItems={"center"}
               >
                 {pages.map((page) => (
-                  <Box
-                    key={page.name}
-                    sx={{
-                      bgcolor:
-                        urlLocation == page.path ? "#00AC8C" : "transparent",
-                      borderRadius: 1,
-                      height: 40,
-                      mr: 2,
-                      p: 1,
-                      boxShadow:
-                        urlLocation == page.path
-                          ? "4px 7px 5px 1px rgba(0, 0, 0, 0.2)"
-                          : 0,
-                      cursor: urlLocation == page.path ? "default" : "pointer",
-                    }}
-                    onClick={() => handleNavigation(page.path)}
-                  >
-                    <Typography
-                      variant="button"
-                      noWrap
+                  <div>
+                    <Box
+                      key={page.name}
                       sx={{
-                        color: urlLocation == page.path ? "white" : "black",
-                        textDecoration: "none",
-                        textTransform: "none",
-                        ":hover": {
-                          color: urlLocation == page.path ? "white" : "#00AC8C",
-                        },
-                        display: "flex",
-                        alignItems: "center",
+                        bgcolor:
+                          urlLocation == page.path
+                            ? "#00AC8C"
+                            : open && page.path == "services"
+                            ? "#00AC8C"
+                            : "transparent",
+                        borderRadius: 1,
+                        height: 40,
+                        mr: 2,
+                        p: 1,
+                        boxShadow:
+                          urlLocation == page.path
+                            ? "4px 7px 5px 1px rgba(0, 0, 0, 0.2)"
+                            : 0,
+                        cursor:
+                          urlLocation == page.path ? "default" : "pointer",
+                      }}
+                      id="basic-button"
+                      aria-controls={open ? "basic-menu" : undefined}
+                      aria-haspopup="true"
+                      aria-expanded={open ? "true" : undefined}
+                      onClick={(e) => {
+                        if (page.path == "services") {
+                          handleClick(e, page.name);
+                        } else {
+                          handleNavigation(page.path);
+                        }
                       }}
                     >
-                      {page.name}
-                    </Typography>
-                  </Box>
+                      <Typography
+                        variant="button"
+                        noWrap
+                        sx={{
+                          color: urlLocation == page.path ? "white" : "black",
+                          textDecoration: "none",
+                          textTransform: "none",
+                          ":hover": {
+                            color:
+                              urlLocation == page.path ? "white" : "#00AC8C",
+                          },
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        {page.name}
+                      </Typography>
+                    </Box>
+                    {!page.subMenus == "" && (
+                      <Menu
+                        id="basic-menu"
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={handleClose}
+                        MenuListProps={{
+                          "aria-labelledby": "basic-button",
+                        }}
+                        sx={{
+                          mt: 1,
+                        }}
+                      >
+                        <Box mt={-1} mb={-1}>
+                          {page.subMenus?.map((sub) => (
+                            <MenuItem
+                              onClick={() => {
+                                handleNavigation(sub.path);
+                                handleClose();
+                              }}
+                              sx={{
+                                bgcolor:
+                                  urlLocation + "/" + urlLocation2 === sub.path
+                                    ? "#00AC8C"
+                                    : "#e2f0ea",
+                                color:
+                                  urlLocation + "/" + urlLocation2 === sub.path
+                                    ? "white"
+                                    : "black",
+                                ":hover": {
+                                  color:
+                                    urlLocation2 === sub.path
+                                      ? "white"
+                                      : "#00AC8C",
+                                },
+                              }}
+                            >
+                              <Typography>{sub.name}</Typography>
+                            </MenuItem>
+                          ))}
+                        </Box>
+                      </Menu>
+                    )}
+                  </div>
                 ))}
               </Grid>
             </Grid>
@@ -189,22 +279,132 @@ function MainHeader(props) {
         </AppBar>
       </HideOnScroll>
 
-      <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer}>
-        <Grid container display={"flex"} justifyContent={"center"}></Grid>
-        <Grid item>
-          <List>
-            {pages.map((page) => (
-              <ListItem
-                button
-                key={page.name}
-                component={Link}
-                to={page.path}
-                onClick={toggleDrawer}
-              >
-                <ListItemText primary={page.name} />
-              </ListItem>
-            ))}
-          </List>
+      <Drawer
+        anchor="right"
+        open={drawerOpen}
+        onClose={toggleDrawer}
+        slotProps={{
+          backdrop: {
+            sx: {
+              background: "rgba(0,0,0,0.4)",
+            },
+          },
+        }}
+        PaperProps={{
+          sx: { width: "50%" },
+        }}
+      >
+        <Grid
+          container
+          display={"flex"}
+          justifyContent={"center"}
+          sx={{ backgroundColor: "#e2f0ea", minHeight: "100svh" }}
+          pl={1}
+        >
+          <Grid
+            item
+            xs={12}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            <img src={LogoBlack} width={80} />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            <Grid container display={"flex"} justifyContent={"center"}>
+              {pages.map((page) => (
+                <Grid
+                  item
+                  xs={12}
+                  key={page.name}
+                  sx={{
+                    bgcolor: urlLocation == page.path ? "#00AC8C" : "#d3dcd7",
+                    borderRadius: 1,
+                    height: page.subMenus ? 235 : 40,
+                    mr: 2,
+                    p: 1,
+                    mb: 2.5,
+                    boxShadow:
+                      urlLocation == page.path
+                        ? "4px 7px 5px 1px rgba(0, 0, 0, 0.2)"
+                        : "3px 5px 5px 1px rgba(0, 0, 0, 0.1)",
+                    cursor: urlLocation == page.path ? "default" : "pointer",
+                  }}
+                  onClick={() => !page.subMenus && handleNavigation(page.path)}
+                >
+                  <Typography
+                    variant="button"
+                    noWrap
+                    sx={{
+                      color: urlLocation == page.path ? "white" : "black",
+                      ":hover": {
+                        color: urlLocation == page.path ? "white" : "#00AC8C",
+                      },
+                      display: "flex",
+                      alignItems: "center",
+                      mb: 1,
+                    }}
+                  >
+                    {page.name}
+                  </Typography>
+                  <Box ml={2}>
+                    {page.subMenus?.map((sub) => (
+                      <Box
+                        item
+                        xs={12}
+                        key={sub.name}
+                        sx={{
+                          bgcolor:
+                            urlLocation + "/" + urlLocation2 == sub.path
+                              ? "white"
+                              : "#e2f0ea",
+                          borderRadius: 1,
+                          height: 40,
+                          mr: 2,
+                          p: 1,
+                          mb: 1,
+                          boxShadow:
+                            urlLocation2 == sub.path
+                              ? "4px 7px 5px 1px rgba(0, 0, 0, 0.2)"
+                              : 0,
+                          cursor:
+                            urlLocation2 == sub.path ? "default" : "pointer",
+                          display: "flex",
+                          justifyContent: "center",
+                        }}
+                        onClick={() => handleNavigation(sub.path)}
+                      >
+                        <Typography
+                          variant="button"
+                          sx={{
+                            color:
+                              urlLocation + "/" + urlLocation2 == sub.path
+                                ? "#19b396"
+                                : "black",
+                            ":hover": {
+                              color:
+                                urlLocation2 == sub.path ? "white" : "#00AC8C",
+                            },
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                        >
+                          {sub.name}
+                        </Typography>
+                      </Box>
+                    ))}
+                  </Box>
+                </Grid>
+              ))}
+            </Grid>
+          </Grid>
+          <Grid item>.</Grid>
         </Grid>
       </Drawer>
     </>
