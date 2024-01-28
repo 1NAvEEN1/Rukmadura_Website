@@ -83,8 +83,8 @@ function MainHeader(props) {
     // Use location.pathname to get the current URL path
     const currentUrl = location.pathname;
     const pathSegments = currentUrl.split("/");
-    const firstPath = pathSegments[1];
-    const secondPath = pathSegments[2]; // Access the second path segment
+    const firstPath = pathSegments[2];
+    const secondPath = pathSegments[3]; // Access the second path segment
     setUrlLocation(firstPath);
     setUrlLocation2(secondPath);
     // Assuming you want to navigate to "home" when the firstPath is empty or undefined

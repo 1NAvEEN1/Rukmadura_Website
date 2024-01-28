@@ -62,7 +62,7 @@ const Welcome = () => {
             <Button
               variant="contained"
               sx={{ bgcolor: "white", color: "#00AC8C" }}
-              onClick={() => navigate("/contacts")}
+              onClick={() => navigate("/Rukmadura_Website/contacts")}
             >
               <Typography fontWeight={700} con>
                 Contact Us
