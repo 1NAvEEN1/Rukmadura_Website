@@ -21,6 +21,7 @@ const WhyChooseUsCard = () => {
         }}
         alignItems={"center"}
         justifyContent={"end"}
+        mt={-3}
       >
         <img src={BuilderPerson} />
       </Grid>
@@ -129,6 +130,7 @@ const WhyChooseUsCard = () => {
         }}
         alignItems={"center"}
         justifyContent={"end"}
+        mt={-3}
       >
         <img src={BuilderPerson} />
       </Grid>

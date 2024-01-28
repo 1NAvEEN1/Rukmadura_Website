@@ -58,12 +58,11 @@ function MainHeader(props) {
   useEffect(() => {
     // Use location.pathname to get the current URL path
     const currentUrl = location.pathname;
-
     const firstPath = currentUrl.split("/")[1];
-    console.log("path", firstPath);
     setUrlLocation(firstPath);
-    // const setUrl = removePart(location)
-    // Your existing removePart function can be used here if needed
+    if (firstPath == "") {
+      navigate("home");
+    }
   }, [location.pathname]);
 
   return (
@@ -176,6 +175,8 @@ function MainHeader(props) {
                         ":hover": {
                           color: urlLocation == page.path ? "white" : "#00AC8C",
                         },
+                        display: "flex",
+                        alignItems: "center",
                       }}
                     >
                       {page.name}

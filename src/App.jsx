@@ -16,27 +16,27 @@ const router = createBrowserRouter([
   //   element: <Registration />,
   // },
   {
-    path: "/",
+    path: "",
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {
-        path: "/home",
+        path: "home",
         element: <Home />,
       },
       {
-        path: "/services",
+        path: "services",
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <Home />,
       },
       {
-        path: "/contacts",
+        path: "contacts",
         element: <Home />,
       },
     ],
