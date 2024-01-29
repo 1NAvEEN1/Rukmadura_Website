@@ -19,6 +19,7 @@ const Heading = () => {
             },
             justifyContent: "center",
             mt: 7,
+            mb:-3
           }}
         >
           Chalets

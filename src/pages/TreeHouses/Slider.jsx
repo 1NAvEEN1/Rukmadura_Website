@@ -42,16 +42,13 @@ const Slider = () => {
             minWidth={480}
             spacing={3}
           >
-            <Grid item xs={3} minWidth={120}>
+            <Grid item xs={3} minWidth={160}>
               <img src={Image1} alt="Slider Image" />
             </Grid>
-            <Grid item xs={3} minWidth={120}>
+            <Grid item xs={3} minWidth={160}>
               <img src={Image2} alt="Slider Image" />
             </Grid>
-            <Grid item xs={3} minWidth={120}>
-              <img src={Image3} alt="Slider Image" />
-            </Grid>
-            <Grid item xs={3} minWidth={120}>
+            <Grid item xs={3} minWidth={160}>
               <img src={Image3} alt="Slider Image" />
             </Grid>
           </Grid>

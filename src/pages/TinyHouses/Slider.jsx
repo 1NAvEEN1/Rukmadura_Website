@@ -1,10 +1,10 @@
 import React from "react";
-import { Grid, Box } from "@mui/material";
+import { Grid, Card, Box } from "@mui/material";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css"; // Import Splide CSS
-import Image1 from "../../assets/C1.png";
-import Image2 from "../../assets/C2.png";
-import Image3 from "../../assets/C3.png";
+import Image1 from "../../assets/H1.png";
+import Image2 from "../../assets/H2.png";
+import Image3 from "../../assets/H3.png";
 
 const Slider = () => {
   return (

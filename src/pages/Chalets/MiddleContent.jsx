@@ -1,15 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import QuestionMarkImage from "../../assets/QuestionMarkImage.png";
-import Emotions from "../../assets/emotions.gif";
-import Maze from "../../assets/maze.gif";
-import Idea from "../../assets/idea.gif";
-import Skills from "../../assets/skills.gif";
-import SocialCare from "../../assets/social-care.gif";
-
-import IndoorJungle from "../../assets/IndoorJungle.png";
-import OutdoorHouse from "../../assets/OutdoorHouse.png";
-import MiniGyms from "../../assets/MiniGyms.png";
 
 const MiddleContent = () => {
   return (
