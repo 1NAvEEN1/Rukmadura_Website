@@ -100,9 +100,9 @@ function MainHeader(props) {
         <AppBar
           sx={{
             boxShadow: "none",
-            background: "transparent",
-            // position: "sticky",
-            // top: 0,
+            background: "#e2f0ea",
+            position: "fixed",
+            top: 0,
             pt: 2,
             pr: 2,
           }}
@@ -353,7 +353,7 @@ function MainHeader(props) {
                   >
                     {page.name}
                   </Typography>
-                  <Box ml={2}>
+                  <Box ml={0.8}>
                     {page.subMenus?.map((sub) => (
                       <Box
                         item
@@ -366,7 +366,7 @@ function MainHeader(props) {
                               : "#e2f0ea",
                           borderRadius: 1,
                           height: 40,
-                          mr: 1,
+                          mr: 0.8,
                           p: 1,
                           mb: 1,
                           boxShadow:

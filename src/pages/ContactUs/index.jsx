@@ -6,7 +6,7 @@ import Phone from "../../assets/PhoneGrey.svg";
 
 const ContactUs = () => {
   return (
-    <Box pt={18} minHeight={"78svh"}>
+    <Box pt={12} minHeight={"78svh"}>
       <Typography variant="h3" textAlign={"center"}>
         Contact Us
       </Typography>

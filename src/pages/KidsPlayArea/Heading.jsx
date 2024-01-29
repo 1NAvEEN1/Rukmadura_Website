@@ -19,7 +19,7 @@ const Heading = () => {
           Kids Play Areas
         </Typography>
       </Grid>
-      <Grid item xs={12} md={5.5} display={"flex"} alignItems={"center"}>
+      <Grid item xs={12} md={5.5} display={"flex"} alignItems={"center"} justifyContent={"end"}>
         <Box>
           <img src={Image} />
         </Box>

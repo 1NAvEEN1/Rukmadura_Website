@@ -4,12 +4,12 @@ import ECO from "../../assets/ECO.png";
 
 const AboutUs = () => {
   return (
-    <Box pt={18} minHeight={"78svh"} pl={1} pr={1}>
+    <Box pt={12} minHeight={"78svh"} pl={1} pr={1}>
       <Typography variant="h3" textAlign={"center"}>
         About Us
       </Typography>
 
-      <Box display={"flex"} justifyContent={"center"} mb={3} mt={6}>
+      <Box display={"flex"} justifyContent={"center"} mb={3} mt={5}>
         <Typography textAlign={"center"} maxWidth={850}>
           We are a company that specialize in making little spaces of heaven
           around the trees in your gardens at affordable prices.
@@ -68,7 +68,7 @@ const AboutUs = () => {
         </Typography>
       </Box>
       <Box display={"flex"} justifyContent={"center"} mb={10}>
-        <img src={ECO} />
+        <img src={ECO} width={200}/>
       </Box>
     </Box>
   );

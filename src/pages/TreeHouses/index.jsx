@@ -4,9 +4,9 @@ import Heading from "./Heading";
 import MiddleContent from "./MiddleContent";
 import Slider from "./Slider";
 
-const KidsPlayArea = () => {
+const TreeHouses = () => {
   return (
-    <Box pt={8} minHeight={"78svh"}>
+    <Box pt={12} minHeight={"78svh"}>
       <Heading />
       <MiddleContent />
       <Slider />
@@ -14,4 +14,4 @@ const KidsPlayArea = () => {
   );
 };
 
-export default KidsPlayArea;
+export default TreeHouses;
