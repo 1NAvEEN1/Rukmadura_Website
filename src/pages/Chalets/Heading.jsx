@@ -24,75 +24,72 @@ const Heading = () => {
           Chalets
         </Typography>
       </Grid>
-      <Grid
-        item
-        xs={12}
-        md={6}
-        display={"flex"}
-        alignItems={"end"}
-        justifyContent={"end"}
-      >
-        <Box>
-          <Grid container spacing={2} mt={3}>
-            <Grid
-              item
-              xs={12}
-              pr={2}
-              display={"flex"}
-              alignItems={"start"}
-              justifyContent={"center"}
-            >
-              <Box maxWidth={500}>
-                <img src={Image} />
-              </Box>
-            </Grid>
+      <Grid item xs={12} md={6} display={"flex"} justifyContent={"center"}>
+        <Grid container spacing={2} mt={3} display={"flex"} alignItems={"end"}>
+          <Grid
+            item
+            xs={12}
+            pr={2}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"start"}
+          >
+            <Box maxWidth={600}>
+              <img src={Image} />
+            </Box>
+          </Grid>
 
-            <Grid
-              item
-              xs={2}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              sx={{
-                display: {
-                  xs: "none",
-                  md: "flex",
-                },
-              }}
-            >
-              <Box>
-                <img src={C3} />
-              </Box>
-            </Grid>
-            <Grid
-              item
-              xs={10}
-              mt={2}
-              pr={2}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"end"}
-              sx={{
-                display: {
-                  xs: "none",
-                  md: "flex",
-                },
-              }}
-            >
-              <Box>
-                <Typography fontWeight={500}>Versatility in Design</Typography>
-                <Typography mt={2} color={"#565656"}>
-                  No two businesses are the same, and neither should their
-                  chalets be. We understand the importance of individuality and
-                  offer a range of design options to suit the unique character
-                  and theme of your establishment. From traditional alpine
-                  aesthetics to contemporary interpretations, our chalets are
-                  crafted to reflect your brand identity.
-                </Typography>
-              </Box>
+          <Grid item xs={12} pr={2}>
+            <Grid container spacing={2}>
+              <Grid
+                item
+                xs={2}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                sx={{
+                  display: {
+                    xs: "none",
+                    md: "flex",
+                  },
+                }}
+              >
+                <Box>
+                  <img src={C3} />
+                </Box>
+              </Grid>
+              <Grid
+                item
+                xs={10}
+                mt={2}
+                pr={2}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"end"}
+                sx={{
+                  display: {
+                    xs: "none",
+                    md: "flex",
+                  },
+                }}
+              >
+                <Box>
+                  <Typography fontWeight={500}>
+                    Versatility in Design
+                  </Typography>
+                  <Typography mt={2} color={"#565656"}>
+                    No two businesses are the same, and neither should their
+                    chalets be. We understand the importance of individuality
+                    and offer a range of design options to suit the unique
+                    character and theme of your establishment. From traditional
+                    alpine aesthetics to contemporary interpretations, our
+                    chalets are crafted to reflect your brand identity.
+                  </Typography>
+                </Box>
+              </Grid>
             </Grid>
           </Grid>
-        </Box>
+        </Grid>
       </Grid>
       <Grid item xs={12} md={6} display={"flex"} alignItems={"center"}>
         <Box>
