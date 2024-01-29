@@ -13,6 +13,7 @@ const ContactUs = Loadable(lazy(() => import("./pages/ContactUs")));
 const AboutUs = Loadable(lazy(() => import("./pages/AboutUs")));
 const KidsPlayArea = Loadable(lazy(() => import("./pages/KidsPlayArea")));
 const TreeHouses = Loadable(lazy(() => import("./pages/TreeHouses")));
+const Chalets = Loadable(lazy(() => import("./pages/Chalets")));
 
 const router = createBrowserRouter([
   // {
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
           },
           {
             path: "chalets",
-            element: <Home />,
+            element: <Chalets />,
           },
           {
             path: "tiny_houses",

@@ -32,17 +32,14 @@ const Heading = () => {
           <Grid item xs={12} display={"flex"} alignItems={"start"}>
             <Box>
               <Typography variant="h3" textAlign={"center"} mt={2}>
-                Tree House
+                Tree Houses
               </Typography>
               <Box
                 display={"flex"}
                 justifyContent={"end"}
                 alignItems={"center"}
               >
-                <Box
-                  mt={3}
-                  sx={{ display: { xs: "block", md: "none" } }}
-                >
+                <Box mt={3} sx={{ display: { xs: "block", md: "none" } }}>
                   <img src={Image} />
                 </Box>
               </Box>
