@@ -1,14 +1,23 @@
 import React from "react";
-import { Grid, Card, Box } from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css"; // Import Splide CSS
-import Image1 from "../../assets/Slider1.png";
-import Image2 from "../../assets/Slider2.png";
-import Image3 from "../../assets/Slider3.png";
+import Image1 from "../../assets/TS1.png";
+import Image2 from "../../assets/TS2.png";
+import Image3 from "../../assets/TS3.png";
 
 const Slider = () => {
   return (
     <Box mb={5}>
+      <Box p={2} display={"flex"} justifyContent={"center"} mt={5} mb={2}>
+        <Typography fontWeight={500} textAlign={"center"} maxWidth={1500}>
+          A tree house is not just a structure; it's an investment in creating a
+          magical and versatile space that adds value to your property and
+          enhances your lifestyle. Whether for family enjoyment, personal
+          relaxation, or as a unique architectural feature, a tree house brings
+          a sense of wonder and joy to any backyard or garden.
+        </Typography>
+      </Box>
       <Splide
         options={{
           type: "loop",

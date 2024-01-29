@@ -41,7 +41,6 @@ const Heading = () => {
               >
                 <Box
                   mt={3}
-                  mb={-3}
                   sx={{ display: { xs: "block", md: "none" } }}
                 >
                   <img src={Image} />
@@ -153,7 +152,7 @@ const Heading = () => {
         alignItems={"center"}
       >
         <Box
-          maxWidth={800}
+          maxWidth={750}
           ml={-5}
           sx={{ display: { xs: "none", md: "block" } }}
         >

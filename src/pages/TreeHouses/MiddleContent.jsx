@@ -5,7 +5,7 @@ import T4 from "../../assets/T4.svg";
 import T5 from "../../assets/T5.svg";
 import T6 from "../../assets/T6.svg";
 import T7 from "../../assets/T7.svg";
-import T8 from "../../assets/T5.svg";
+import T8 from "../../assets/T8.svg";
 
 const itemsData = [
   {
@@ -88,11 +88,6 @@ const MiddleContent = () => {
           />
         ))}
       </Grid>
-      <Box>
-        <Typography variant="h5">
-          Why dramatic play is good for children.
-        </Typography>
-      </Box>
     </Box>
   );
 };

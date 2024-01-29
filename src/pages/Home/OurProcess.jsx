@@ -71,7 +71,7 @@ const WhyChooseUsCard = () => {
             </Grid>
             <Grid item xs={12} display={"flex"} justifyContent={"center"}>
               <Typography mb={2} mt={2} variant="h6">
-                Tree House Construction
+                Construction
               </Typography>
             </Grid>
             <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
