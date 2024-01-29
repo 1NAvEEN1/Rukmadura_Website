@@ -59,14 +59,15 @@ const typography = {
     fontSize: pxToRem(14),
   },
   body1: {
-    fontWeight: 500,
-    lineHeight: 1.5,
-    fontSize: pxToRem(18), // Changed Here
+    fontWeight: 400,
+    lineHeight: 1.4,
+    fontSize: pxToRem(14),
+    ...responsiveFontSizes({ sm: 18 }),
   },
   body2: {
     lineHeight: 22 / 14,
-    fontSize: pxToRem(13),
-    ...responsiveFontSizes({ sm: 16 }),
+    fontSize: pxToRem(14),
+    ...responsiveFontSizes({ sm: 18 }),
   },
   smallText: {
     lineHeight: 22 / 14,

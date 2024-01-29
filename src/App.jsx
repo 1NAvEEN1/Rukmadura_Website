@@ -19,19 +19,19 @@ const router = createBrowserRouter([
   //   element: <Registration />,
   // },
   {
-    path: "/Rukmadura_Website",
+    path: "/new",
     element: <Layout />,
     children: [
       {
-        path: "/Rukmadura_Website",
+        path: "/new",
         element: <Home />,
       },
       {
-        path: "/Rukmadura_Website/home",
+        path: "/new/home",
         element: <Home />,
       },
       {
-        path: "/Rukmadura_Website/services",
+        path: "/new/services",
         children: [
           {
             path: "kids_play_area",
@@ -52,11 +52,11 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "/Rukmadura_Website/about",
+        path: "/new/about",
         element: <AboutUs />,
       },
       {
-        path: "/Rukmadura_Website/contacts",
+        path: "/new/contacts",
         element: <ContactUs />,
       },
     ],

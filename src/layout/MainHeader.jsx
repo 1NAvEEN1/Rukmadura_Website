@@ -64,7 +64,7 @@ function MainHeader(props) {
   const handleNavigation = (path) => {
     console.log(path);
     navigate(path);
-    setDrawerOpen(false)
+    setDrawerOpen(false);
   };
 
   // State and handlers for the Menu component
@@ -366,7 +366,7 @@ function MainHeader(props) {
                               : "#e2f0ea",
                           borderRadius: 1,
                           height: 40,
-                          mr: 2,
+                          mr: 1,
                           p: 1,
                           mb: 1,
                           boxShadow:
@@ -381,7 +381,6 @@ function MainHeader(props) {
                         onClick={() => handleNavigation(sub.path)}
                       >
                         <Typography
-                          variant="button"
                           sx={{
                             color:
                               urlLocation + "/" + urlLocation2 == sub.path

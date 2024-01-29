@@ -16,17 +16,17 @@ const WhyChooseUsCard = () => {
           </Typography>
         </Grid>
 
-        <Grid item xs={12} sm={4} display={"flex"} justifyContent={"center"}>
+        <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
           <Grid container p={2} maxWidth={450}>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"}>
+            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
               <img src={Meeting} />
             </Grid>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"}>
-              <Typography mb={2} mt={2}>
+            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+              <Typography mb={2} mt={2} variant="h6">
                 Meeting & Consultation
               </Typography>
             </Grid>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"}>
+            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
               <Typography variant="body2" textAlign={"center"}>
                 These spaces are used for many reasons as Kids play area,
                 peaceful environment at your own residence, Man Caves and with
@@ -37,17 +37,24 @@ const WhyChooseUsCard = () => {
           </Grid>
         </Grid>
 
-        <Grid item xs={12} sm={4} display={"flex"} justifyContent={"center"}>
+        <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
           <Grid container p={2} maxWidth={450}>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"}>
+            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
               <img src={Design} />
             </Grid>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"}>
-              <Typography mb={2} mt={2}>
+            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+              <Typography mb={2} mt={2} variant="h6">
                 Design and Planning
               </Typography>
             </Grid>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"}>
+            <Grid
+              item
+              xs={12}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              minHeight={150}
+            >
               <Typography variant="body2" textAlign={"center"}>
                 We can provide you with a plethora of designs to choose from our
                 catalogs or we could get specific information from you to design
@@ -57,19 +64,19 @@ const WhyChooseUsCard = () => {
           </Grid>
         </Grid>
 
-        <Grid item xs={12} sm={4} display={"flex"} justifyContent={"center"}>
+        <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
           <Grid container maxWidth={450}>
             <Grid item xs={12} display={"flex"} justifyContent={"center"}>
               <img src={TreeHouse} />
             </Grid>
             <Grid item xs={12} display={"flex"} justifyContent={"center"}>
-              <Typography mb={2} mt={2}>
+              <Typography mb={2} mt={2} variant="h6">
                 Tree House Construction
               </Typography>
             </Grid>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"}>
+            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
               <Typography variant="body2" textAlign={"center"}>
-                Our highly skilled craftsmen use the best material to build the
+                Our highly skilled craftmden use the best material to build the
                 space and use novel methods to ensure longevity and strength of
                 the structure. We also ensure that the natural environment is
                 left unharmed.

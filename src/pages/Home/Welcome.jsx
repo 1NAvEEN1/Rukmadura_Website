@@ -47,7 +47,7 @@ const Welcome = () => {
           <Typography fontSize={{ xs: 17, sm: 43 }} fontWeight={700}>
             TO RUK MADURA
           </Typography>
-          <Box display={"flex"} justifyContent={"center"}>
+          <Box display={"flex"} justifyContent={"center"} mt={3}>
             <Typography maxWidth={800} variant="body2">
               Where imagination meets craftsmanship to create enchanting spaces
               for children and adults alike. We specialize in designing and
@@ -62,7 +62,7 @@ const Welcome = () => {
             <Button
               variant="contained"
               sx={{ bgcolor: "white", color: "#00AC8C" }}
-              onClick={() => navigate("/Rukmadura_Website/contacts")}
+              onClick={() => navigate("/new/contacts")}
             >
               <Typography fontWeight={700} con>
                 Contact Us
