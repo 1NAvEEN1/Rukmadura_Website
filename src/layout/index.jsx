@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import MainHeader from "./MainHeader";
 import Footer from "./footer";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import Box from "@mui/material/Box";
+import {Box} from "@mui/material";
 import Fab from "@mui/material/Fab";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Fade from "@mui/material/Fade";

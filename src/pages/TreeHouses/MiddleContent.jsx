@@ -1,5 +1,5 @@
-import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
+import { Box, Grid, Typography, Collapse, Button } from "@mui/material";
+import React, { useState } from "react";
 import T3 from "../../assets/T3.svg";
 import T4 from "../../assets/T4.svg";
 import T5 from "../../assets/T5.svg";
@@ -66,7 +66,24 @@ const GridItem = ({ image, title, text }) => {
   );
 };
 
+const ShowMoreContent = (
+  <Grid container spacing={4} mt={3}>
+    {itemsData.slice(2, 7).map((item, index) => (
+      <GridItem
+        key={index}
+        image={item.image}
+        title={item.title}
+        text={item.text}
+      />
+    ))}
+  </Grid>
+);
 const MiddleContent = () => {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = () => {
+    setChecked((prev) => !prev);
+  };
   return (
     <Box
       mt={-3}
@@ -79,7 +96,7 @@ const MiddleContent = () => {
       }}
     >
       <Grid container spacing={4} mt={3}>
-        {itemsData.map((item, index) => (
+        {itemsData.slice(0, 2).map((item, index) => (
           <GridItem
             key={index}
             image={item.image}
@@ -88,6 +105,15 @@ const MiddleContent = () => {
           />
         ))}
       </Grid>
+      <Collapse in={checked}>{ShowMoreContent}</Collapse>
+
+      <Box display={"flex"} justifyContent={"center"} mt={5}>
+        <Button onClick={handleChange}>
+          <Typography textAlign={"center"}>
+            {checked ? "Show less..." : "Read more..."}
+          </Typography>
+        </Button>
+      </Box>
     </Box>
   );
 };

@@ -1,7 +1,8 @@
 import React from "react";
 import { Grid, Typography, Box } from "@mui/material";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/dist/css/themes/splide-default.min.css"; // Import Splide CSS
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import "@splidejs/splide/dist/css/splide.min.css";
 import Image1 from "../../assets/TS1.png";
 import Image2 from "../../assets/TS2.png";
 import Image3 from "../../assets/TS3.png";
@@ -33,6 +34,8 @@ const Slider = () => {
             speed: 3,
           },
         }}
+        extensions={{ AutoScroll }}
+
       >
         <SplideSlide>
           <Grid
