@@ -15,12 +15,20 @@ const Heading = () => {
             },
             justifyContent: "center",
           }}
+          mb={5}
         >
           Kids Play Areas
         </Typography>
       </Grid>
-      <Grid item xs={12} md={5.5} display={"flex"} alignItems={"center"} justifyContent={"end"}>
-        <Box>
+      <Grid
+        item
+        xs={12}
+        md={5.5}
+        display={"flex"}
+        alignItems={"center"}
+        justifyContent={"center"}
+      >
+        <Box maxWidth={500}>
           <img src={Image} />
         </Box>
       </Grid>
@@ -33,21 +41,25 @@ const Heading = () => {
               md: "flex",
             },
             justifyContent: "start",
-            mt: 5,
+            mt: {
+              xs: 0,
+              md: 9,
+            },
+            pl:2
           }}
         >
           Kids Play Areas
         </Typography>
         <Box
           p={2}
-          sx={{
-            ml: {
-              xs: 0,
-              md: -3,
-            },
-          }}
+          // sx={{
+          //   ml: {
+          //     xs: 0,
+          //     md: -3,
+          //   },
+          // }}
         >
-          <Typography mt={4}>
+          <Typography mt={0}>
             Play is an essential component of early childhood development,
             development through play contributes to the cognitive, physical,
             social, and emotional well-being of children. Play is not limited to
@@ -59,12 +71,12 @@ const Heading = () => {
         </Box>
         <Box
           p={2}
-          sx={{
-            ml: {
-              xs: 0,
-              md: 5,
-            },
-          }}
+          // sx={{
+          //   ml: {
+          //     xs: 0,
+          //     md: 5,
+          //   },
+          // }}
         >
           <Typography mt={4}>
             In addition, play offers an ideal opportunity for parents or
@@ -81,12 +93,12 @@ const Heading = () => {
         </Box>
         <Box
           p={2}
-          sx={{
-            ml: {
-              xs: 0,
-              md: 5,
-            },
-          }}
+          // sx={{
+          //   ml: {
+          //     xs: 0,
+          //     md: 5,
+          //   },
+          // }}
         >
           <Typography mt={4}>Examples of Dramatic Play Zones</Typography>
           <Typography mt={2} color={"#565656"}>

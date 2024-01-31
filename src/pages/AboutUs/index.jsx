@@ -10,7 +10,7 @@ const AboutUs = () => {
       </Typography>
 
       <Box display={"flex"} justifyContent={"center"} mb={3} mt={5}>
-        <Typography textAlign={"center"} maxWidth={850}>
+        <Typography textAlign={"center"} maxWidth={1000}>
           Welcome to Rukmadura, where we specialize in crafting serene retreats
           amid the blessings nature has bestowed upon your gardens, all at
           affordable prices. Our team, boasting over 20 years of expertise in
@@ -19,7 +19,7 @@ const AboutUs = () => {
         </Typography>
       </Box>
       <Box display={"flex"} justifyContent={"center"} mb={3}>
-        <Typography textAlign={"center"} maxWidth={850}>
+        <Typography textAlign={"center"} maxWidth={1000}>
           Originating with a focus on treehouses, Rukmadura has expanded its
           offerings to include Kids' Play Areas, Chalets, and Tiny Houses. Our
           passion is to seamlessly integrate nature into your living spaces,
@@ -29,29 +29,35 @@ const AboutUs = () => {
         </Typography>
       </Box>
       <Box display={"flex"} justifyContent={"center"} mb={3}>
-        <Typography textAlign={"center"} maxWidth={900}>
-          The skill sets of all these individuals are combined, to provide our
-          customers with heavenly spaces in the form of tree houses using the
-          newest designs and modern technology. We have utilized the knowledge
-          acquired in the industry of construction, to construct your tree house
-          that lasts for decades. This ensures minimal maintenance requirements
-          and repairs over a period. (as oppose to a generic tree house that
-          requires a total makeover within a couple of years)
+        <Typography textAlign={"center"} maxWidth={1000}>
+          Rukmadura's designs are versatile, customized to blend with the unique
+          features nature provides in your location. Whether creating a play
+          area for kids, a relaxing man cave, a structure for business
+          interests, or a tranquil workspace in your garden, we craft spaces
+          that seamlessly integrate with the natural environment, captivating
+          friends, family, and visitors alike.
         </Typography>
       </Box>
       <Box display={"flex"} justifyContent={"center"} mb={3}>
-        <Typography textAlign={"center"} maxWidth={850}>
-          Our designs ensure the spaces we create blends in with the surrounding
-          environment. Our aim is to ensure people in Sri Lanka gets closer to
-          greener concepts for leisure whilst enjoying the beauties bestowed
-          upon us by mother nature. We provide a 5-year full comprehensive
-          warrantee to the structure and partial warrantee there on.
+        <Typography textAlign={"center"} maxWidth={1000}>
+          Our skilled team leverages diverse expertise to provide heavenly
+          spaces through customized designs and modern technology. Prioritizing
+          durability, a Rukmadura creation lasts for decades with minimal
+          maintenance, unlike generic structures that may require a total
+          makeover within a couple of years. Meticulously crafted designs
+          harmonize with surroundings, promoting greener concepts for leisure,
+          allowing you to immerse yourself in the beauty bestowed upon us by
+          Mother Nature
         </Typography>
       </Box>
       <Box display={"flex"} justifyContent={"center"} mb={8}>
-        <Typography textAlign={"center"} maxWidth={900}>
-          We trust these spaces of heaven would help our customers be peaceful
-          resulting in creativeness and mindfulness and happy family lives.
+        <Typography textAlign={"center"} maxWidth={1000}>
+          To assure quality, we offer a 5-year comprehensive warranty for the
+          structure. These spaces of heaven bring not only peace but also
+          inspire creativity, mindfulness, and foster happy family lives.
+          Rukmadura invites you to embrace a unique blend of craftsmanship,
+          nature, and innovation as we transform your garden into a haven of
+          tranquility.
         </Typography>
       </Box>
 
@@ -60,16 +66,18 @@ const AboutUs = () => {
       </Typography>
 
       <Box display={"flex"} justifyContent={"center"} mb={3} mt={3}>
-        <Typography textAlign={"center"} maxWidth={700}>
-          We believe in building in a way which is harmonious with nature, using
-          shapes and approaches which complement the environment.
-        </Typography>
-      </Box>
-      <Box display={"flex"} justifyContent={"center"} mb={5}>
-        <Typography textAlign={"center"} maxWidth={700}>
-          By implementing Nature friendly construction techniques learnt whilst
-          working with experts in India, we never cause any damage to trees we
-          are working with.
+        <Typography textAlign={"center"} maxWidth={1000}>
+          At Rukmadura, our commitment to sustainability is woven into the
+          fabric of our construction philosophy. We prioritize harmonious
+          integration with nature, employing nature-friendly techniques
+          developed in collaboration with environmental experts. These methods
+          ensure minimal impact on the habitat, emphasizing respect for the
+          environment. Our structures are thoughtfully designed to complement
+          natural landscapes, using sustainable materials and technologies for
+          long-lasting impact. Sustainability is not just a practice for us;
+          it's a guiding principle that shapes every aspect of our eco-friendly
+          construction, contributing to the preservation of the natural beauty
+          we are inspired by.
         </Typography>
       </Box>
       <Box display={"flex"} justifyContent={"center"} mb={10}>

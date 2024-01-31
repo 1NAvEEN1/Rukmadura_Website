@@ -42,8 +42,9 @@ const Heading = () => {
                 display={"flex"}
                 justifyContent={"center"}
                 alignItems={"center"}
+                mt={2}
               >
-                <Box sx={{ display: { xs: "flex", md: "none" } }} pr={4}>
+                <Box sx={{ display: { xs: "flex", md: "none" } }} pr={2}>
                   <img src={Image} />
                 </Box>
               </Box>
@@ -116,7 +117,7 @@ const Heading = () => {
       >
         <Box
           maxWidth={750}
-          ml={-5}
+          ml={2}
           sx={{ display: { xs: "none", md: "block" } }}
         >
           <img src={Image} />
