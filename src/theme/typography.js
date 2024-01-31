@@ -71,7 +71,7 @@ const typography = {
   },
   smallText: {
     lineHeight: 22 / 14,
-    fontSize: pxToRem(11),
+    fontSize: pxToRem(13),
   },
   caption: {
     lineHeight: 1.5,

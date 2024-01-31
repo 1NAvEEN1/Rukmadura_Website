@@ -10,6 +10,32 @@ import WhyChooseUsCard from "./WhyChooseUsCard";
 import OurProcess from "./OurProcess";
 import Welcome from "./Welcome";
 
+const serviceItems = [
+  {
+    imageSrc: KidsPlay,
+    title: "Kids Play Area",
+    text: "Our team of skilled architects and designers understands the importance of creating engaging and safe environments for children. From vibrant play structures to interactive zones, we combine creativity with safety to build spaces where kids can explore, learn, and play freely. Most importantly, focusing on their early childhood development needs.",
+    path: "/new/services/kids_play_area",
+  },
+  {
+    imageSrc: TreeHouse,
+    title: "Tree Houses",
+    text: "Enliven your backyard or garden with our custom-designed tree houses. Whether nestled in the branches of a majestic tree or standing tall on sturdy supports, our tree houses are crafted to blend seamlessly with nature while offering a magical escape for children and adults alike.",
+    path: "/new/services/tree_houses",
+  },
+  {
+    imageSrc: Chalets,
+    title: "Chalets",
+    text: "Elevate your business establishment’s allure with our bespoke chalets that embody luxury and comfort. Our designs seamlessly integrate with the surrounding landscape, providing guests with a cozy retreat and an unforgettable experience. From traditional Alpine aesthetics to modern interpretations, we tailor each chalet to suit the unique identity of your establishment.",
+    path: "/new/services/chalets",
+  },
+  {
+    imageSrc: TinyHomes,
+    title: "Tiny Homes",
+    text: "With the economic crunch that has led to an era of minimalism and sustainable living, our tiny homes are a perfect solution for those seeking compact, yet stylish living spaces. Designed with functionality and aesthetics in mind, our tiny homes maximize space, embrace energy efficiency, and offer a customizable haven for those who crave simplicity without compromising on comfort.",
+    path: "/new/services/tiny_houses",
+  },
+];
 const Home = () => {
   return (
     <Box
@@ -27,10 +53,15 @@ const Home = () => {
         Our Services
       </Typography>
       <Grid container spacing={3} pl={5} pr={5} mt={0}>
-        <ServiceItemCard imageSrc={KidsPlay} title="Kids Play Area" />
-        <ServiceItemCard imageSrc={TreeHouse} title="Tree Houses" />
-        <ServiceItemCard imageSrc={Chalets} title="Chalets" />
-        <ServiceItemCard imageSrc={TinyHomes} title="Tiny Homes" />
+        {serviceItems.map((item, index) => (
+          <ServiceItemCard
+            key={index}
+            imageSrc={item.imageSrc}
+            title={item.title}
+            text={item.text}
+            path={item.path}
+          />
+        ))}
       </Grid>
 
       <Typography variant="h3" textAlign={"center"} mt={10}>

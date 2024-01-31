@@ -11,16 +11,21 @@ const AboutUs = () => {
 
       <Box display={"flex"} justifyContent={"center"} mb={3} mt={5}>
         <Typography textAlign={"center"} maxWidth={850}>
-          We are a company that specialize in making little spaces of heaven
-          around the trees in your gardens at affordable prices.
+          Welcome to Rukmadura, where we specialize in crafting serene retreats
+          amid the blessings nature has bestowed upon your gardens, all at
+          affordable prices. Our team, boasting over 20 years of expertise in
+          the building industry, includes architects, interior designers,
+          carpenters, woodworkers, and steel structure specialists.
         </Typography>
       </Box>
       <Box display={"flex"} justifyContent={"center"} mb={3}>
         <Typography textAlign={"center"} maxWidth={850}>
-          We are a combination of highly skilled individuals, possessing vast
-          experience of more than 20 years in the building industry. The
-          individuals comprise of Architects, Interior designers, skilled
-          carpenters, wood workers and Steel structure specialists.
+          Originating with a focus on treehouses, Rukmadura has expanded its
+          offerings to include Kids' Play Areas, Chalets, and Tiny Houses. Our
+          passion is to seamlessly integrate nature into your living spaces,
+          taking your home outdoors amidst Sri Lanka's lush landscape—a paradise
+          of botanical beauty that we explore with constructions harmonizing
+          with Mother Nature.
         </Typography>
       </Box>
       <Box display={"flex"} justifyContent={"center"} mb={3}>
@@ -68,7 +73,7 @@ const AboutUs = () => {
         </Typography>
       </Box>
       <Box display={"flex"} justifyContent={"center"} mb={10}>
-        <img src={ECO} width={200}/>
+        <img src={ECO} width={200} />
       </Box>
     </Box>
   );
