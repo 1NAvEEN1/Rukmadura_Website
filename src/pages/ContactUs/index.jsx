@@ -92,7 +92,12 @@ const ContactUs = () => {
               <Grid item xs={10}>
                 <Typography maxWidth={800}>Give us a Call</Typography>
                 <Typography maxWidth={800} variant="body2">
-                  +94 777 491496
+                  <a
+                    href="tel:+94777491496"
+                    style={{ textDecoration: "none", color: "#52AC8C" }}
+                  >
+                    +94 777 491496
+                  </a>
                 </Typography>
               </Grid>
               <Grid
@@ -105,9 +110,14 @@ const ContactUs = () => {
                 <img src={Email} width={30} />
               </Grid>
               <Grid item xs={10}>
-                <Typography maxWidth={800}>Drop us a Email</Typography>
+                <Typography maxWidth={800}>Drop us an Email</Typography>
                 <Typography maxWidth={800} variant="body2">
-                  rukmadura@gmail.com
+                  <a
+                    href="mailto:rukmadura@gmail.com"
+                    style={{ textDecoration: "none", color: "#52AC8C" }}
+                  >
+                    rukmadura@gmail.com
+                  </a>
                 </Typography>
               </Grid>
             </Grid>

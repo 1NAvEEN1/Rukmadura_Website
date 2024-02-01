@@ -6,7 +6,7 @@ import Instagram from "../assets/instagram.svg";
 import Email from "../assets/email.svg";
 import Phone from "../assets/phone.svg";
 
-const footer = () => {
+const Footer = () => {
   return (
     <Grid
       container
@@ -22,22 +22,46 @@ const footer = () => {
           Creating Little Spaces of Heavens
         </Typography>
       </Grid>
-      <Grid item xs={12} display={"flex"} justifyContent={"center"} mt={1} gap={2} mb={3}>
+      <Grid
+        item
+        xs={12}
+        display={"flex"}
+        justifyContent={"center"}
+        mt={1}
+        gap={2}
+        mb={3}
+      >
         <IconButton>
-          <img src={FB} width={30} />
+          <a
+            href="https://www.facebook.com/Rukmadurapage"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={FB} width={30} />
+          </a>
         </IconButton>
         <IconButton>
-          <img src={Instagram} width={35} />
+          <a
+            href="https://www.instagram.com/rukmadura/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Instagram} width={35} />
+          </a>
         </IconButton>
         <IconButton>
-          <img src={Email} width={30} />
+          <a href="mailto:rukmadura@gmail.com">
+            <img src={Email} width={30} />
+          </a>
         </IconButton>
         <IconButton>
-          <img src={Phone} width={28} />
+          <a href="tel:+94777491496">
+            <img src={Phone} width={28} />
+          </a>
         </IconButton>
       </Grid>
     </Grid>
   );
 };
 
-export default footer;
+export default Footer;
