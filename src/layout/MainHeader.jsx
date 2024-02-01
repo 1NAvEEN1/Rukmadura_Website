@@ -61,11 +61,13 @@ function MainHeader(props) {
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
   };
-
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   const handleNavigation = (path) => {
-    console.log(path);
     navigate(path);
     setDrawerOpen(false);
+    scrollToTop();
   };
 
   // State and handlers for the Menu component
@@ -81,7 +83,6 @@ function MainHeader(props) {
   };
 
   useEffect(() => {
-    // Use location.pathname to get the current URL path
     const currentUrl = location.pathname;
     const pathSegments = currentUrl.split("/");
     const firstPath = pathSegments[2];
@@ -89,7 +90,6 @@ function MainHeader(props) {
     setUrlLocation(firstPath);
     setUrlLocation2(secondPath);
     // Assuming you want to navigate to "home" when the firstPath is empty or undefined
-    console.log(pathSegments);
     if (!firstPath) {
       navigate("home");
     }
@@ -292,14 +292,14 @@ function MainHeader(props) {
           },
         }}
         PaperProps={{
-          sx: { width: "50%" },
+          sx: { width: "50%", backgroundColor: "#e2f0ea" },
         }}
       >
         <Grid
           container
           display={"flex"}
           justifyContent={"center"}
-          sx={{ backgroundColor: "#e2f0ea", minHeight: "100svh" }}
+          sx={{ minHeight: "100svh" }}
           pl={1}
         >
           <Grid
