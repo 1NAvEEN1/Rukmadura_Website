@@ -150,7 +150,6 @@ const Heading = () => {
       >
         <Box
           maxWidth={750}
-          ml={-5}
           sx={{ display: { xs: "none", md: "block" } }}
         >
           <img src={Image} />

@@ -18,15 +18,34 @@ const WhyChooseUsCard = () => {
 
         <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
           <Grid container p={2} maxWidth={450}>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+            <Grid
+              item
+              xs={12}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
               <img src={Meeting} />
             </Grid>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+            <Grid
+              item
+              xs={12}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
               <Typography mb={2} mt={2} variant="h6">
                 Meeting & Consultation
               </Typography>
             </Grid>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+            <Grid
+              item
+              xs={12}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              minHeight={200}
+            >
               <Typography variant="body2" textAlign={"center"}>
                 These spaces are used for many reasons as Kids play area,
                 peaceful environment at your own residence, Man Caves and with
@@ -39,10 +58,22 @@ const WhyChooseUsCard = () => {
 
         <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
           <Grid container p={2} maxWidth={450}>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+            <Grid
+              item
+              xs={12}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
               <img src={Design} />
             </Grid>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+            <Grid
+              item
+              xs={12}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
               <Typography mb={2} mt={2} variant="h6">
                 Design and Planning
               </Typography>
@@ -53,7 +84,7 @@ const WhyChooseUsCard = () => {
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
-              minHeight={150}
+              minHeight={200}
             >
               <Typography variant="body2" textAlign={"center"}>
                 We can provide you with a plethora of designs to choose from our
@@ -74,7 +105,14 @@ const WhyChooseUsCard = () => {
                 Construction
               </Typography>
             </Grid>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+            <Grid
+              item
+              xs={12}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              minHeight={200}
+            >
               <Typography variant="body2" textAlign={"center"}>
                 Our highly skilled craftmden use the best material to build the
                 space and use novel methods to ensure longevity and strength of

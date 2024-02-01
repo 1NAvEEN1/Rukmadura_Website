@@ -36,7 +36,7 @@ const Layout = () => {
   return (
     <div style={{ backgroundColor: "#e2f0ea" }}>
       <MainHeader />
-      <Box minHeight={"80svh"}>
+      <Box minHeight={"60svh"}>
         <Outlet />
       </Box>
       <Footer />
