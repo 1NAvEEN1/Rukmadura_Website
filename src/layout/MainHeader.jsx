@@ -15,6 +15,7 @@ import {
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import LogoBlack from "../assets/LogoBlack.png";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const pages = [
   { name: "HOME", path: "home" },
@@ -335,24 +336,30 @@ function MainHeader(props) {
                         ? "4px 7px 5px 1px rgba(0, 0, 0, 0.2)"
                         : "3px 5px 5px 1px rgba(0, 0, 0, 0.1)",
                     cursor: urlLocation == page.path ? "default" : "pointer",
+                    display: page.subMenus ? "inline" : "flex",
+                    justifyContent: "center",
+                    alignItems: "start",
+                    pt: 1.3,
                   }}
                   onClick={() => !page.subMenus && handleNavigation(page.path)}
                 >
-                  <Typography
-                    variant="button"
-                    noWrap
-                    sx={{
-                      color: urlLocation == page.path ? "white" : "black",
-                      ":hover": {
-                        color: urlLocation == page.path ? "white" : "#00AC8C",
-                      },
-                      display: "flex",
-                      alignItems: "center",
-                      mb: 1,
-                    }}
-                  >
-                    {page.name}
-                  </Typography>
+                  <Box display={"flex"} justifyContent={"center"}>
+                    <Typography
+                      fontWeight={500}
+                      sx={{
+                        color: urlLocation == page.path ? "white" : "black",
+                        ":hover": {
+                          color: urlLocation == page.path ? "white" : "#00AC8C",
+                        },
+                        display: "flex",
+                        alignItems: "center",
+                        mb: 1,
+                      }}
+                    >
+                      {page.name}
+                    </Typography>
+                  </Box>
+
                   <Box ml={0.8}>
                     {page.subMenus?.map((sub) => (
                       <Box
@@ -403,7 +410,11 @@ function MainHeader(props) {
               ))}
             </Grid>
           </Grid>
-          <Grid item>.</Grid>
+          <Grid item>
+            <IconButton sx={{ boxShadow: 5 }} onClick={toggleDrawer}>
+              <ArrowForwardIosIcon />
+            </IconButton>
+          </Grid>
         </Grid>
       </Drawer>
     </>

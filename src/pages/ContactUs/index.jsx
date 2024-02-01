@@ -24,7 +24,7 @@ const ContactUs = () => {
             justifyContent: "center",
             mb: {
               xs: 0,
-              md: 18,
+              md: 15,
             },
           }}
         >
