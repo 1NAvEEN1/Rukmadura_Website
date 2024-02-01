@@ -1,13 +1,17 @@
 import React from "react";
-import { Grid, Typography, Box } from "@mui/material";
+import { Grid, Typography, Box, useMediaQuery } from "@mui/material";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
 import Image1 from "../../assets/TS1.png";
 import Image2 from "../../assets/TS2.png";
 import Image3 from "../../assets/TS3.png";
+import Image4 from "../../assets/TS2.png";
+import Image5 from "../../assets/TS3.png";
 
 const Slider = () => {
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+
   return (
     <Box mb={5}>
       <Box p={2} display={"flex"} justifyContent={"center"} mt={5} mb={2}>
@@ -19,44 +23,41 @@ const Slider = () => {
           a sense of wonder and joy to any backyard or garden.
         </Typography>
       </Box>
-      <Splide
-        options={{
-          type: "loop",
-          gap: "8%",
-          drag: "free",
-          arrows: false,
-          pagination: false,
-          perPage: 1,
-          autoScroll: {
-            pauseOnHover: false,
-            pauseOnFocus: false,
-            rewind: false,
-            speed: 3,
-          },
-        }}
-        extensions={{ AutoScroll }}
-
-      >
-        <SplideSlide>
-          <Grid
-            container
-            display={"flex"}
-            justifyContent={"space-between"}
-            minWidth={480}
-            spacing={3}
-          >
-            <Grid item xs={3} minWidth={160}>
-              <img src={Image1} alt="Slider Image" />
-            </Grid>
-            <Grid item xs={3} minWidth={160}>
-              <img src={Image2} alt="Slider Image" />
-            </Grid>
-            <Grid item xs={3} minWidth={160}>
-              <img src={Image3} alt="Slider Image" />
-            </Grid>
-          </Grid>
-        </SplideSlide>
-      </Splide>
+      <Grid container py={5}>
+        <Splide
+          options={{
+            type: "loop",
+            drag: "free",
+            gap: 10,
+            arrows: false,
+            pagination: false,
+            perPage: isSmallScreen ? 2 : 4, // Change perPage based on screen size
+            autoScroll: {
+              pauseOnHover: false,
+              pauseOnFocus: false,
+              rewind: false,
+              speed: 2,
+            },
+          }}
+          extensions={{ AutoScroll }}
+        >
+          <SplideSlide>
+            <img src={Image1} alt="Slider Image" />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={Image2} alt="Slider Image" />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={Image3} alt="Slider Image" />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={Image4} alt="Slider Image" />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={Image5} alt="Slider Image" />
+          </SplideSlide>
+        </Splide>
+      </Grid>
     </Box>
   );
 };
