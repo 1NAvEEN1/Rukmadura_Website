@@ -9,23 +9,23 @@ import H6 from "../../assets/H6.svg";
 const itemsData = [
   {
     image: H2,
-    title: "Personal Retreat",
-    text: "A tree house can serve as your personal retreat, providing a tranquil space to relax, read a book, or simply enjoy the beauty of your surroundings. It offers a peaceful escape from the hustle and bustle of daily life, allowing you to unwind and rejuvenate.",
+    title: "Flexible Growth for Young Couples",
+    text: "For newlyweds looking to establish their life together, a Ruk Madura tiny house provides an ideal starting point. These homes are not just residences; they're the foundation upon which to build dreams. Their compact nature is perfect for young couples starting small, allowing them to gradually expand their living space as their family and needs grow over time.",
   },
   {
     image: H3,
-    title: "Personal Retreat",
-    text: "A tree house can serve as your personal retreat, providing a tranquil space to relax, read a book, or simply enjoy the beauty of your surroundings. It offers a peaceful escape from the hustle and bustle of daily life, allowing you to unwind and rejuvenate.",
+    title: "Customizable Designs to Suit Your Lifestyle",
+    text: "Ruk Madura takes pride in offering customizable designs that cater to the unique needs and preferences of our clients. Whether you're a couple looking for a cozy nest or envisioning a space for a growing family, our tiny homes can be tailored to fit your lifestyle, ensuring that every square foot serves a purpose.",
   },
   {
     image: H4,
-    title: "Increased Property Value",
-    text: "Well-designed and aesthetically pleasing tree houses can enhance the overall value of your property. Potential buyers often see unique outdoor features like tree houses as attractive additions, making your property stand out in the real estate market.",
+    title: "Sustainable Living without Sacrifice",
+    text: "Tiny homes by Ruk Madura are crafted with sustainability in mind. Embrace a lifestyle that reduces your environmental footprint without compromising on comfort or style. Our homes feature energy-efficient designs, eco-friendly materials, and the option to incorporate renewable energy sources, allowing you to live responsibly without sacrificing modern conveniences.",
   },
   {
     image: H5,
-    title: "Educational Opportunities",
-    text: "A tree house can be an educational space for children. It offers a unique vantage point for observing nature, teaching them about the environment, wildlife, and the changing seasons. It can spark an interest in the outdoors and foster a love for learning.",
+    title: "Portability and Adaptability",
+    text: "Life is an ever-evolving journey, and Ruk Madura tiny homes are designed to adapt to your changing circumstances. Whether you want to relocate for a job, travel the country, or simply explore different neighborhoods, the portability of our tiny homes provides you with the freedom to live where you desire.",
   },
 ];
 

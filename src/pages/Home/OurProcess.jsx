@@ -43,7 +43,7 @@ const WhyChooseUsCard = () => {
               xs={12}
               display={"flex"}
               justifyContent={"center"}
-              alignItems={"center"}
+              alignItems={"start"}
               minHeight={200}
             >
               <Typography variant="body2" textAlign={"center"}>
@@ -83,24 +83,36 @@ const WhyChooseUsCard = () => {
               xs={12}
               display={"flex"}
               justifyContent={"center"}
-              alignItems={"center"}
+              alignItems={"start"}
               minHeight={200}
             >
               <Typography variant="body2" textAlign={"center"}>
                 We can provide you with a plethora of designs to choose from our
                 catalogs or we could get specific information from you to design
-                1 your dream heaven.
+                your dream heaven.
               </Typography>
             </Grid>
           </Grid>
         </Grid>
 
         <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
-          <Grid container maxWidth={450}>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"}>
+          <Grid container maxWidth={450} p={2}>
+            <Grid
+              item
+              xs={12}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
               <img src={TreeHouse} />
             </Grid>
-            <Grid item xs={12} display={"flex"} justifyContent={"center"}>
+            <Grid
+              item
+              xs={12}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
               <Typography mb={2} mt={2} variant="h6">
                 Construction
               </Typography>
@@ -110,11 +122,11 @@ const WhyChooseUsCard = () => {
               xs={12}
               display={"flex"}
               justifyContent={"center"}
-              alignItems={"center"}
+              alignItems={"start"}
               minHeight={200}
             >
               <Typography variant="body2" textAlign={"center"}>
-                Our highly skilled craftmden use the best material to build the
+                Our highly skilled craftsmen use the best material to build the
                 space and use novel methods to ensure longevity and strength of
                 the structure. We also ensure that the natural environment is
                 left unharmed.

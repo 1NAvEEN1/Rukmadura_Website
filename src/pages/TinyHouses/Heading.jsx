@@ -33,7 +33,13 @@ const Heading = () => {
         justifyContent={"center"}
       >
         <Grid container display={"flex"} alignItems={"end"}>
-          <Grid item xs={12} display={"flex"} alignItems={"start"} justifyContent={"end"}>
+          <Grid
+            item
+            xs={12}
+            display={"flex"}
+            alignItems={"start"}
+            justifyContent={"end"}
+          >
             <Box maxWidth={800}>
               <Typography variant="h3" textAlign={"center"} mt={5}>
                 Tiny Houses
@@ -92,14 +98,15 @@ const Heading = () => {
                 </Grid>
                 <Grid item xs={10} pr={2}>
                   <Typography fontWeight={500}>
-                    Immersive Outdoor Experience
+                    Affordability in a Time of Economic Constraints
                   </Typography>
                   <Typography mt={2} color={"#565656"}>
-                    A tree house provides a unique and immersive outdoor
-                    experience. It allows you to connect with nature, offering a
-                    space where you can enjoy the sights and sounds of the
-                    outdoors while being elevated in a peaceful and private
-                    environment.
+                    In the face of economic uncertainties, the prospect of
+                    owning a traditional home may seem daunting. Ruk Madura
+                    offers a cost-effective alternative with our tiny homes.
+                    These compact yet cleverly designed living spaces provide
+                    all the essentials without the hefty mortgage, making
+                    homeownership more accessible in challenging economic times.
                   </Typography>
                 </Grid>
               </Grid>

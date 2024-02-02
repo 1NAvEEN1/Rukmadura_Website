@@ -39,7 +39,7 @@ const Heading = () => {
                 justifyContent={"end"}
                 alignItems={"center"}
               >
-                <Box mt={3} sx={{ display: { xs: "block", md: "none" } }}>
+                <Box mt={3} sx={{ display: { xs: "block", md: "none" } }} maxWidth={500}>
                   <img src={Image} />
                 </Box>
               </Box>
@@ -149,7 +149,7 @@ const Heading = () => {
         alignItems={"center"}
       >
         <Box
-          maxWidth={750}
+          maxWidth={650}
           sx={{ display: { xs: "none", md: "block" } }}
         >
           <img src={Image} />
