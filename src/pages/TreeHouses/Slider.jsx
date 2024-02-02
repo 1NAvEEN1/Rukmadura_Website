@@ -6,8 +6,9 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import Image1 from "../../assets/TS1.png";
 import Image2 from "../../assets/TS2.png";
 import Image3 from "../../assets/TS3.png";
-import Image4 from "../../assets/TS2.png";
-import Image5 from "../../assets/TS3.png";
+import Image4 from "../../assets/TS4.png";
+import Image5 from "../../assets/TS5.png";
+import Image6 from "../../assets/TS6.png";
 
 const Slider = () => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
@@ -55,6 +56,9 @@ const Slider = () => {
           </SplideSlide>
           <SplideSlide>
             <img src={Image5} alt="Slider Image" />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={Image6} alt="Slider Image" />
           </SplideSlide>
         </Splide>
       </Grid>

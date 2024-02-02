@@ -7,7 +7,7 @@ import TreeHouse from "../../assets/TreeHouse.svg";
 const WhyChooseUsCard = () => {
   return (
     <Box display={"flex"} justifyContent={"center"}>
-      <Grid container mt={0} p={3} spacing={2} maxWidth={1400}>
+      <Grid container mt={0} spacing={2} maxWidth={1400}>
         <Grid item xs={12} p={2} display={"flex"} justifyContent={"center"}>
           <Typography textAlign={"center"}>
             We follow very simplified process. We are also available for a site
@@ -16,7 +16,19 @@ const WhyChooseUsCard = () => {
           </Typography>
         </Grid>
 
-        <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          display={"flex"}
+          justifyContent={"center"}
+          sx={{
+            maxHeight: {
+              xs: 320,
+              md: 700,
+            },
+          }}
+        >
           <Grid container p={2} maxWidth={450}>
             <Grid
               item
@@ -56,7 +68,19 @@ const WhyChooseUsCard = () => {
           </Grid>
         </Grid>
 
-        <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          display={"flex"}
+          justifyContent={"center"}
+          sx={{
+            maxHeight: {
+              xs: 320,
+              md: 700,
+            },
+          }}
+        >
           <Grid container p={2} maxWidth={450}>
             <Grid
               item
@@ -95,7 +119,19 @@ const WhyChooseUsCard = () => {
           </Grid>
         </Grid>
 
-        <Grid item xs={12} md={4} display={"flex"} justifyContent={"center"}>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          display={"flex"}
+          justifyContent={"center"}
+          sx={{
+            maxHeight: {
+              xs: 320,
+              md: 700,
+            },
+          }}
+        >
           <Grid container maxWidth={450} p={2}>
             <Grid
               item
