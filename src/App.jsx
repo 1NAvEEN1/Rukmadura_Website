@@ -1,9 +1,5 @@
-// import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import store from "./app/store";
 import ThemeProvider from "./theme";
-import Login from "./pages/Login/Login";
-// import Layout from "./layout";
 import Loadable from "./components/Loadable/Loadable";
 import { lazy } from "react";
 
@@ -15,12 +11,9 @@ const KidsPlayArea = Loadable(lazy(() => import("./pages/KidsPlayArea")));
 const TreeHouses = Loadable(lazy(() => import("./pages/TreeHouses")));
 const Chalets = Loadable(lazy(() => import("./pages/Chalets")));
 const TinyHouses = Loadable(lazy(() => import("./pages/TinyHouses")));
+const Gallery = Loadable(lazy(() => import("./pages/Gallery")));
 
 const router = createBrowserRouter([
-  // {
-  //   path: "/conferences/:shortName/:year",
-  //   element: <Registration />,
-  // },
   {
     path: "/new",
     element: <Layout />,
@@ -62,17 +55,19 @@ const router = createBrowserRouter([
         path: "/new/contacts",
         element: <ContactUs />,
       },
+      {
+        path: "/new/gallery",
+        element: <Gallery />,
+      },
     ],
   },
 ]);
 
 const App = () => {
   return (
-    // <Provider store={store}>
     <ThemeProvider>
       <RouterProvider router={router} />
     </ThemeProvider>
-    // </Provider>
   );
 };
 

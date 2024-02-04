@@ -30,6 +30,7 @@ const pages = [
     ],
   },
   { name: "ABOUT US", path: "about" },
+  { name: "GALLERY", path: "gallery" },
   { name: "CONTACT US", path: "contacts" },
 ];
 
@@ -105,7 +106,8 @@ function MainHeader(props) {
             position: "fixed",
             top: 0,
             pt: 2,
-            pr: 2,
+            pr: { xs: 0, md: 3 },
+            mr: { xs: -1, md: 0 },
           }}
         >
           <Toolbar disableGutters>
@@ -168,7 +170,9 @@ function MainHeader(props) {
               }}
             >
               <Grid item xs={2} pl={2}>
-                <img src={LogoBlack} width={80} />
+                <Box sx={{ ml: { xs: -1.5, md: 0 } }}>
+                  <img src={LogoBlack} width={80} />
+                </Box>
               </Grid>
               <Grid
                 item

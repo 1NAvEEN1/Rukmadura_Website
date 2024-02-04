@@ -6,7 +6,7 @@ import TreeHouse from "../../assets/TreeHouse.svg";
 
 const WhyChooseUsCard = () => {
   return (
-    <Box display={"flex"} justifyContent={"center"}>
+    <Box display={"flex"} justifyContent={"center"} mb={5}>
       <Grid container mt={0} spacing={2} maxWidth={1400}>
         <Grid item xs={12} p={2} display={"flex"} justifyContent={"center"}>
           <Typography textAlign={"center"}>
