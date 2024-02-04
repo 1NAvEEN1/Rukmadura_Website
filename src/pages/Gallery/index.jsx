@@ -1,6 +1,10 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import PastWork from "./PastWork";
+import KidsPlayArea from "./KidsPlayArea";
+import TreeHouse from "./TreeHouse";
+import TinyHouse from "./TinyHouse";
+import Chalets from "./Chalets";
 
 const Gallery = () => {
   return (
@@ -9,10 +13,30 @@ const Gallery = () => {
         Rukmadura Gallery
       </Typography>
 
-      <Typography variant="h6">Our Past Work</Typography>
+      <Box display={"flex"} justifyContent={"center"} mt={4} mb={2}>
+        <Grid container maxWidth={1200}>
+          <Grid item xs={12} pl={2}>
+            <Typography variant="h5" textAlign={"left"}>
+              Our Past Work
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
+
       <PastWork />
 
-      <Typography variant="h6">Day Concepts</Typography>
+      <Box display={"flex"} justifyContent={"center"} mt={4} mb={2}>
+        <Grid container maxWidth={1200}>
+          <Grid item xs={12} pl={2}>
+            <Typography variant="h5">Day Concepts</Typography>
+          </Grid>
+        </Grid>
+      </Box>
+
+      <KidsPlayArea />
+      <TreeHouse />
+      <TinyHouse />
+      <Chalets />
     </Box>
   );
 };

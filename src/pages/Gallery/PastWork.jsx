@@ -50,7 +50,17 @@ const PastWork = () => {
   };
   return (
     <Box display={"flex"} justifyContent={"center"}>
-      <Box bgcolor={"#ffff"} maxWidth={1200} p={2}>
+      <Box
+        bgcolor={"#ffff"}
+        maxWidth={1200}
+        sx={{
+          p: {
+            xs: 1,
+            md: 2,
+          },
+        }}
+        borderRadius={1}
+      >
         <Box display={"flex"} justifyContent={"center"}>
           <Grid container spacing={1} maxWidth={1150}>
             <Grid item xs={4}>
@@ -72,10 +82,19 @@ const PastWork = () => {
           <Collapse in={checked}>{ShowMoreContent}</Collapse>
         </Box>
 
-        <Box display={"flex"} justifyContent={"center"} mt={2}>
+        <Box
+          display={"flex"}
+          justifyContent={"end"}
+          sx={{
+            mt: {
+              xs: 0,
+              md: 2,
+            },
+          }}
+        >
           <Button onClick={handleChange}>
-            <Typography textAlign={"center"}>
-              {checked ? "Show less..." : "Read more..."}
+            <Typography textAlign={"right"}>
+              {checked ? "Show less..." : "Show more..."}
             </Typography>
           </Button>
         </Box>

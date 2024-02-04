@@ -1,30 +1,27 @@
 import { Box, Grid, Typography, Collapse, Button } from "@mui/material";
 import React, { useState } from "react";
-import GKP1 from "../../assets/GKP1.png";
-import GKP2 from "../../assets/GKP2.png";
-import GKP3 from "../../assets/GKP3.png";
-import GKP4 from "../../assets/GKP4.png";
-import GKP5 from "../../assets/GKP5.png";
-import GKP6 from "../../assets/GKP6.png";
+import GTH1 from "../../assets/GTH1.png";
+import GTH2 from "../../assets/GTH2.png";
+import GTH3 from "../../assets/GTH3.png";
+import GTH4 from "../../assets/GTH4.png";
+import GTH5 from "../../assets/GTH5.png";
+import GTH6 from "../../assets/GTH6.png";
 
 const ShowMoreContent = (
   <Grid container spacing={1} maxWidth={1150}>
-    <Grid item xs={12} display={"flex"} justifyContent={"center"}>
-      <img src={GKP3} />
+    <Grid item xs={4.5} display={"flex"} justifyContent={"center"}>
+      <img src={GTH4} />
     </Grid>
-    <Grid item xs={12} display={"flex"} justifyContent={"center"}>
-      <img src={GKP4} />
+    <Grid item xs={4.5} display={"flex"} justifyContent={"center"}>
+      <img src={GTH5} />
     </Grid>
-    <Grid item xs={7} display={"flex"} justifyContent={"center"}>
-      <img src={GKP5} />
-    </Grid>
-    <Grid item xs={5} display={"flex"} justifyContent={"center"}>
-      <img src={GKP6} />
+    <Grid item xs={3} display={"flex"} justifyContent={"center"}>
+      <img src={GTH6} />
     </Grid>
   </Grid>
 );
 
-const KidsPlayArea = () => {
+const TinyHouse = () => {
   const [checked, setChecked] = useState(false);
 
   const handleChange = () => {
@@ -47,14 +44,17 @@ const KidsPlayArea = () => {
           <Grid container spacing={1} maxWidth={1150}>
             <Grid item xs={12}>
               <Typography variant="h6" textAlign={"center"}>
-                Kids Play Area
+                Tiny House
               </Typography>
             </Grid>
-            <Grid item xs={5}>
-              <img src={GKP1} />
+            <Grid item xs={4.8}>
+              <img src={GTH1} />
             </Grid>
-            <Grid item xs={7} display={"flex"} justifyContent={"center"}>
-              <img src={GKP2} />
+            <Grid item xs={3.2} display={"flex"} justifyContent={"center"}>
+              <img src={GTH2} />
+            </Grid>
+            <Grid item xs={4} display={"flex"} justifyContent={"center"}>
+              <img src={GTH3} />
             </Grid>
           </Grid>
         </Box>
@@ -84,4 +84,4 @@ const KidsPlayArea = () => {
   );
 };
 
-export default KidsPlayArea;
+export default TinyHouse;

@@ -1,30 +1,34 @@
 import { Box, Grid, Typography, Collapse, Button } from "@mui/material";
 import React, { useState } from "react";
-import GKP1 from "../../assets/GKP1.png";
-import GKP2 from "../../assets/GKP2.png";
-import GKP3 from "../../assets/GKP3.png";
-import GKP4 from "../../assets/GKP4.png";
-import GKP5 from "../../assets/GKP5.png";
-import GKP6 from "../../assets/GKP6.png";
+import GTR1 from "../../assets/GTR1.png";
+import GTR2 from "../../assets/GTR2.png";
+import GTR3 from "../../assets/GTR3.png";
+import GTR4 from "../../assets/GTR4.png";
+import GTR5 from "../../assets/GTR5.png";
+import GTR6 from "../../assets/GTR6.png";
+import GTR7 from "../../assets/GTR7.png";
 
 const ShowMoreContent = (
   <Grid container spacing={1} maxWidth={1150}>
-    <Grid item xs={12} display={"flex"} justifyContent={"center"}>
-      <img src={GKP3} />
-    </Grid>
-    <Grid item xs={12} display={"flex"} justifyContent={"center"}>
-      <img src={GKP4} />
-    </Grid>
     <Grid item xs={7} display={"flex"} justifyContent={"center"}>
-      <img src={GKP5} />
+      <img src={GTR3} />
     </Grid>
     <Grid item xs={5} display={"flex"} justifyContent={"center"}>
-      <img src={GKP6} />
+      <img src={GTR4} />
+    </Grid>
+    <Grid item xs={3} display={"flex"} justifyContent={"center"}>
+      <img src={GTR5} />
+    </Grid>
+    <Grid item xs={3} display={"flex"} justifyContent={"center"}>
+      <img src={GTR6} />
+    </Grid>
+    <Grid item xs={6} display={"flex"} justifyContent={"center"}>
+      <img src={GTR7} />
     </Grid>
   </Grid>
 );
 
-const KidsPlayArea = () => {
+const TreeHouse = () => {
   const [checked, setChecked] = useState(false);
 
   const handleChange = () => {
@@ -47,14 +51,14 @@ const KidsPlayArea = () => {
           <Grid container spacing={1} maxWidth={1150}>
             <Grid item xs={12}>
               <Typography variant="h6" textAlign={"center"}>
-                Kids Play Area
+                Tree Houses
               </Typography>
             </Grid>
             <Grid item xs={5}>
-              <img src={GKP1} />
+              <img src={GTR1} />
             </Grid>
             <Grid item xs={7} display={"flex"} justifyContent={"center"}>
-              <img src={GKP2} />
+              <img src={GTR2} />
             </Grid>
           </Grid>
         </Box>
@@ -84,4 +88,4 @@ const KidsPlayArea = () => {
   );
 };
 
-export default KidsPlayArea;
+export default TreeHouse;
