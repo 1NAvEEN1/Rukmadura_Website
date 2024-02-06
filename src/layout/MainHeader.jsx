@@ -86,8 +86,8 @@ function MainHeader(props) {
   useEffect(() => {
     const currentUrl = location.pathname;
     const pathSegments = currentUrl.split("/");
-    const firstPath = pathSegments[2];
-    const secondPath = pathSegments[3]; // Access the second path segment
+    const firstPath = pathSegments[1];
+    const secondPath = pathSegments[2]; // Access the second path segment
     setUrlLocation(firstPath);
     setUrlLocation2(secondPath);
     // Assuming you want to navigate to "home" when the firstPath is empty or undefined
@@ -120,7 +120,7 @@ function MainHeader(props) {
               <Grid item xs={3} pt={1} pl={2}>
                 <img src={LogoBlack} width={60} />
               </Grid>
-              <Grid item xs={9} display={"flex"} justifyContent={"end"}>
+              <Grid item xs={9} display={"flex"} justifyContent={"end"} pr={3}>
                 <IconButton
                   size="large"
                   aria-label="account of current user"

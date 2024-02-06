@@ -9,16 +9,16 @@ import GKP6 from "../../assets/GKP6.png";
 
 const ShowMoreContent = (
   <Grid container spacing={1} maxWidth={1150}>
-    <Grid item xs={12} display={"flex"} justifyContent={"center"}>
+    <Grid item xs={7.5} display={"flex"} justifyContent={"center"}>
       <img src={GKP3} />
     </Grid>
-    <Grid item xs={12} display={"flex"} justifyContent={"center"}>
+    <Grid item xs={4.5} display={"flex"} justifyContent={"center"}>
       <img src={GKP4} />
     </Grid>
-    <Grid item xs={7} display={"flex"} justifyContent={"center"}>
+    <Grid item xs={5.5} display={"flex"} justifyContent={"center"}>
       <img src={GKP5} />
     </Grid>
-    <Grid item xs={5} display={"flex"} justifyContent={"center"}>
+    <Grid item xs={6.5} display={"flex"} justifyContent={"center"}>
       <img src={GKP6} />
     </Grid>
   </Grid>

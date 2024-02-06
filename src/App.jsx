@@ -15,19 +15,19 @@ const Gallery = Loadable(lazy(() => import("./pages/Gallery")));
 
 const router = createBrowserRouter([
   {
-    path: "/new",
+    path: "",
     element: <Layout />,
     children: [
       {
-        path: "/new",
+        path: "",
         element: <Home />,
       },
       {
-        path: "/new/home",
+        path: "/home",
         element: <Home />,
       },
       {
-        path: "/new/services",
+        path: "/services",
         children: [
           {
             path: "kids_play_area",
@@ -48,15 +48,15 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "/new/about",
+        path: "/about",
         element: <AboutUs />,
       },
       {
-        path: "/new/contacts",
+        path: "/contacts",
         element: <ContactUs />,
       },
       {
-        path: "/new/gallery",
+        path: "/gallery",
         element: <Gallery />,
       },
     ],

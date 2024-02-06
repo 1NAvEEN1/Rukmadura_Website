@@ -124,8 +124,8 @@ const MiddleContent = () => {
         </Grid>
       </Box>
 
-      <Box mt={3} mb={5}>
-        <Typography  color={"#565656"}>
+      <Box mt={2} mb={5}>
+        {/* <Typography  color={"#565656"}>
           These things can be custom made according to the budget, for homes or
           institutes/schools or even offices.
         </Typography>
@@ -145,7 +145,7 @@ const MiddleContent = () => {
           marketing solutions like this, not all in one package like this. So
           you could launch yourself quite well. As of now there is no proper
           trampoline park in Lanka. (CCC has a small one that is it)
-        </Typography>
+        </Typography> */}
       </Box>
     </Box>
   );
